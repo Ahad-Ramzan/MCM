@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopNavbar from "@/components/Navbar/TopNavbar";
 import BottomNavbar from "@/components/Navbar/BottomNavbar";
@@ -6,15 +5,38 @@ import Newsletter from "@/components/Footer/NewsLetter";
 import FooterLinks from "@/components/Footer/FooterLinks";
 import MobileTopbar from "@/components/Navbar/mobile/MobileTopbar";
 import MobileBottombar from "@/components/Navbar/MobileBottombar";
+import localFont from 'next/font/local';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const geistSans = localFont({
+  src: [
+    {
+      path: '../public/fonts/Geist-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    // {
+    //   path: '/fonts/Geist-Regular.woff',
+    //   weight: '400',
+    //   style: 'normal',
+    // },
+  ],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const geistMono = localFont({
+  src: [
+    {
+      path: '../public/fonts/GeistMono-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    // {
+    //   path: '/fonts/GeistMono-Regular.woff',
+    //   weight: '400',
+    //   style: 'normal',
+    // },
+  ],
+  display: 'swap',
 });
 
 export const metadata = {

@@ -1,3 +1,4 @@
+'use client'
 import ProductCardStar from "@/ui/ProductCardStar";
 import React from "react";
 import { ProductInfoTabs } from "./product-info-tabs";

@@ -1,8 +1,6 @@
 import AppDownload from "@/components/Home/AppDownload";
 import ConstructionMaterials from "@/components/Home/ConstructionMaterials";
-
 import FeaturesBanner from "@/components/Home/FeaturesBanner";
-
 import ImageGallery from "@/components/Home/ImageGallery";
 import ImageGallery2 from "@/components/Home/ImageGallery2";
 import NewArrivals from "@/components/Home/NewArrivals";
