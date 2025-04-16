@@ -1,10 +1,11 @@
+'use client'
 import Breadcrumb from "@/components/Breadcrumb";
 import { ProductInfoTabs } from "@/components/Product/product-info-tabs";
 import ProductDetails from "@/components/Product/ProductDetails";
 import RightSideBar from "@/components/Product/RightSideBar";
 import React from "react";
 
-const page = () => {
+export default function Product(){
   return (
     <div>
       <Breadcrumb
@@ -32,6 +33,4 @@ const page = () => {
       </div>
     </div>
   );
-};
-
-export default page;
+}

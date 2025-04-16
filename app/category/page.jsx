@@ -1,3 +1,4 @@
+'use client'
 import Breadcrumb from "@/components/Breadcrumb";
 import BrandsLogoBar from "@/components/Category/BrandsLogoBar";
 import SliderCategory from "@/components/Category/Slider";
@@ -8,7 +9,7 @@ import BestSale from "@/components/Category/BestSale";
 
 import ProductListPage from "@/components/Category/ProductList";
 
-const page = () => {
+export default function Category(){
   return (
     <>
       <Breadcrumb
@@ -31,5 +32,3 @@ const page = () => {
     </>
   );
 };
-
-export default page;

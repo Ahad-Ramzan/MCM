@@ -1,4 +1,5 @@
 // components/TopCategories.jsx
+'use client'
 import React from "react";
 import CategoryCard from "@/ui/TopCategoryCard";
 

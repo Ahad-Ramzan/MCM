@@ -1,9 +1,9 @@
+'use client'
 import Breadcrumb from "@/components/Breadcrumb";
 import TrackOrderPage from "@/components/Trackorder/Form";
 import React from "react";
 
-const page = () => {
-  return (
+export default function Trackorder(){  return (
     <div>
       <Breadcrumb
         items={[
@@ -14,6 +14,4 @@ const page = () => {
       <TrackOrderPage />
     </div>
   );
-};
-
-export default page;
+}

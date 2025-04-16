@@ -1,8 +1,9 @@
+'use client'
 import Breadcrumb from "@/components/Breadcrumb";
 import CheckoutPage from "@/components/checkout/CheckoutPage";
 import React from "react";
 
-const page = () => {
+export default function Category(){
   return (
     <div>
       <Breadcrumb
@@ -15,6 +16,4 @@ const page = () => {
       <CheckoutPage />
     </div>
   );
-};
-
-export default page;
+}
