@@ -36,15 +36,15 @@ export default function Checkout() {
   const [formData, setFormData] = useState({});
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 ">
-      <h1 className="text-3xl mx-auto font-bold mb-6 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:py-16 ">
+      <h1 className="text-2xl md:text-3xl mx-auto font-bold mb-2 sm:mb-6 text-center">
         Finalizar Compra
       </h1>
-      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto p-6 pt-0 grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           {/* Email Section */}
           <div className="space-y-4">
-            <label className="block text-lg font-semibold pt-4">
+            <label className="block text-lg font-normal pt-4">
               Endereço de e-mail
             </label>
             <Input

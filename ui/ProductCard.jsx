@@ -15,13 +15,13 @@ const ProductCard = ({
     <div className="w-[200px] text-sm">
       {/* Image */}
       <div className="bg-gray-100 w-full h-[150px] mb-3 flex items-center justify-center">
-        <Image
+        {/* <Image
           src={image}
           alt={title}
           width={100}
           height={100}
           className="object-contain"
-        />
+        /> */}
       </div>
 
       {/* Brand */}

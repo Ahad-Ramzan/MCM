@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ const StarRating = ({ rating = 0 }) => {
     } else if (rating >= i - 0.5) {
       stars.push(<FaStarHalfAlt key={i} className="text-yellow-500 text-sm" />);
     } else {
-      stars.push(<FaRegStar key={i} className="text-yellow-500 text-sm" />);
+      stars.push(<FaRegStar key={i} className="text-gray-400 text-sm" />);
     }
   }
 

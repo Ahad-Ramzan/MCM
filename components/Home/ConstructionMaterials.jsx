@@ -75,11 +75,11 @@ const ConstructionMaterials = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-6 my-8">
+    <div className="Container py-6 my-8">
       {/* Menu Bar  */}
-      <div className="w-full flex justify-between bg-gray-100 p-4 my-12">
+      <div className="w-full flex justify-between flex-wrap bg-gray-100 p-4 my-6 sm:my-12">
         <h2 className="text-xl font-normal">Materiais de Construção</h2>
-        <div className="flex gap-4 items-center text-sm text-[var(--darkGray4)]">
+        <div className="flex gap-4 flex-wrap text-nowrap items-center text-sm text-[var(--darkGray4)]">
           <Link href="#" className>
             Novos
           </Link>

@@ -1,5 +1,5 @@
 // components/TopCategories.jsx
-'use client'
+"use client";
 import React from "react";
 import CategoryCard from "@/ui/TopCategoryCard";
 
@@ -16,7 +16,7 @@ const categories = [
 
 const TopCategories = () => {
   return (
-    <div className="container mx-auto my-10 w-full">
+    <div className="Container my-10 ">
       <h2 className="text-lg font-semibold mb-4">Top Categorias</h2>
       <div className="flex  gap-4 flex-wrap">
         {categories.map((title, index) => (

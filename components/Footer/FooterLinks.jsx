@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import FooterBottom from "./FooterBottom";
@@ -12,8 +12,8 @@ import { FaI } from "react-icons/fa6";
 
 const FooterLinks = () => {
   return (
-    <footer className="bg-white container mx-auto pt-10">
-      <div className=" flex flex-col lg:flex-row justify-between gap-10 mb-8">
+    <footer className="bg-white pt-10">
+      <div className=" Container  flex flex-col lg:flex-row justify-between gap-10 mb-8">
         {/* Logo */}
         <div className="flex-1">
           <Image
@@ -26,7 +26,7 @@ const FooterLinks = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-sm text-gray-600 flex-[3]">
+        <div className="grid grid-cols-1  sm:grid-cols-3 lg:grid-cols-4 gap-6 text-sm text-gray-600 flex-[3]">
           {/* Contact Section */}
           <div>
             <h4 className="font-semibold text-black mb-7">Contactos</h4>
@@ -34,7 +34,9 @@ const FooterLinks = () => {
               <li className="text-[var(--primary)] font-bold text-lg whitespace-nowrap">
                 (+351) 224 151 808
               </li>
-              <li>(chamada para a rede fixa nacional)</li>
+              <li className="text-xs mb-3">
+                (chamada para a rede fixa nacional)
+              </li>
               <li>Rua Nova do Cerno, 85</li>
               <li>4585 – 861 Rebordosa</li>
               <li>geral@mariaclaramarques.pt</li>

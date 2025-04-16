@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Breadcrumb({ items = [] }) {
   return (
     <div className="bg-gray-100 w-full py-3 text-sm text-gray-600">
-      <div className="container mx-auto">
+      <div className="Container ">
         <nav className="flex flex-wrap gap-1 items-center">
           {items.map((item, index) => (
             <span key={index} className="flex items-center">

@@ -44,12 +44,12 @@ const ProductCardStar = ({
 
       {/* Brand */}
       <p className="text-[10px] text-[var(--darkGray4)] uppercase border-b border-[var(--lightGray4)] pb-1 mb-1">
-        {brand}
+        {/* {brand} */}Marca Produto
       </p>
 
       {/* Title */}
       <h3 className="text-[13px] font-semibold text-[var(--primary)] leading-snug">
-        {title}
+        {/* {title} */}Placas de Gesso
       </h3>
 
       {/* Rating and count */}

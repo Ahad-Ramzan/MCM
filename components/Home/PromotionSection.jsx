@@ -76,10 +76,10 @@ const PromotionSection = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-6 my-8">
+    <div className="Container mx-auto  py-6 my-8">
       {/* Header */}
       <div className="flex justify-between items-center pb-4 border-b border-gray-200 mb-4">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center flex-wrap  gap-3">
           <h2 className="text-xl font-semibold">Promoções</h2>
           <CountdownTimer targetDate="2025-04-15T23:59:59" />
         </div>

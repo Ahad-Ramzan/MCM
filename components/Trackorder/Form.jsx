@@ -15,12 +15,14 @@ export default function TrackOrderPage() {
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center px-4">
       <div className=" w-full text-center space-y-6">
-        <h1 className="text-2xl sm:text-3xl font-bold">Acompanhar Encomenda</h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold my-5">
+          Acompanhar Encomenda
+        </h1>
         <p className="text-sm text-gray-600">
           Para acompanhar a encomenda é necessário introduzir o número da
-          encomenda e pressionar o botão. Este número pode ser <br /> encontrado
-          em conjunto com o recibo e no email de confirmação que lhe foi
-          enviado.
+          encomenda e pressionar o botão. Este número pode ser{" "}
+          <br className="hidden md:inline" /> encontrado em conjunto com o
+          recibo e no email de confirmação que lhe foi enviado.
         </p>
 
         <form

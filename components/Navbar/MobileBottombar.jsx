@@ -17,7 +17,7 @@ const MobileBottombar = () => {
   return (
     <>
       <div className="fixed bottom-0 left-0 right-0 z-10 bg-white border-t border-gray-200 xl:hidden">
-        <div className="flex justify-center gap-10 items-center py-2">
+        <div className="flex justify-center gap-4 sm:gap-10 items-center py-2">
           <button
             onClick={() => handleOpen("menu")}
             className="flex flex-col items-center text-md text-gray-600"

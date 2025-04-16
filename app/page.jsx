@@ -24,7 +24,6 @@ export default function Home() {
       <FlooringCoatingSection />
       <ImageGallery2 />
       <AppDownload />
-
       <NewArrivals />
     </div>
   );

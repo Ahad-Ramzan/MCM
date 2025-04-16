@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -21,7 +20,7 @@ const MobileDrawer = ({ isOpen, onClose, drawerType }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed top-0 right-0 bottom-0 w-full sm:w-1/2 md:w-1/4 min-w-96 bg-gray-50 shadow-lg z-50 "
+          className="fixed top-0 right-0 bottom-0 w-full sm:w-1/2 md:w-1/2  bg-gray-50 shadow-lg z-50 "
           variants={drawerVariants}
           initial="hidden"
           animate="visible"
@@ -41,7 +40,7 @@ const MobileDrawer = ({ isOpen, onClose, drawerType }) => {
           </div>
 
           {/* Content area */}
-          <div className="p-4">
+          <div className="py-4 Container">
             {drawerType === "menu" && (
               <ul className="space-y-2">
                 <li>
@@ -58,7 +57,9 @@ const MobileDrawer = ({ isOpen, onClose, drawerType }) => {
 
             {drawerType === "categories" && (
               <ul className="space-y-2">
-                <li>Madeiras</li>
+                <li>
+                  <Link href="/category">Categorias</Link>
+                </li>
                 <li>Ferramentas</li>
                 <li>Revestimentos</li>
               </ul>
@@ -69,7 +70,7 @@ const MobileDrawer = ({ isOpen, onClose, drawerType }) => {
                 <input
                   type="text"
                   placeholder="Estou à procura de..."
-                  className="h-10 flex-1 px-4  text-black outline-none"
+                  className="h-10  flex-1 px-2 sm:px-4  text-black outline-none"
 
                   // onChange={(e) => setSearchTerm(e.target.value)}
                 />

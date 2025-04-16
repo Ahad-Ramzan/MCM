@@ -30,16 +30,16 @@ const ProductListPage = () => {
   );
 
   return (
-    <div className="w-full lg:px-4 py-6 bg-white">
+    <div className="w-full  lg:px-4 py-6 bg-white">
       {/* Top bar */}
-      <div className="flex flex-wrap justify-between items-center border border-gray-100 p-3 bg-gray-50 mb-6">
+      <div className="flex flex-wrap w-full justify-between items-center border border-gray-100 p-3 bg-gray-50 mb-6">
         <p className="text-sm text-gray-700">
           <strong>{productData.length}</strong> Produtos encontrados
         </p>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 flex-wrap items-center justify-between">
           {/* Ordenar por */}
-          <select className="text-sm border border-gray-300 rounded px-2 py-1">
+          <select className="text-sm border border-gray-300 rounded px-2 py-1 mt-2">
             <option>Ordenar por</option>
             <option>Preço: menor para maior</option>
             <option>Preço: maior para menor</option>
@@ -55,7 +55,7 @@ const ProductListPage = () => {
       </div>
 
       {/* Product grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {visibleProducts.map((product, index) => (
           <ProductCardStar key={index} {...product} />
         ))}

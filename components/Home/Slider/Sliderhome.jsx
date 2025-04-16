@@ -36,7 +36,7 @@ const Sliderhome = () => {
   };
 
   return (
-    <div className="container mx-auto my-6">
+    <div className="Container mx-auto my-6">
       <div className="flex flex-col xl:flex-row gap-4">
         {/* Slider */}
         <div className="w-full xl:w-2/3 bg-gray-100 flex items-center justify-left pl-[13%] h-[400px] relative overflow-hidden">

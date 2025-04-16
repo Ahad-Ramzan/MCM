@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Breadcrumb from "@/components/Breadcrumb";
 import BrandsLogoBar from "@/components/Category/BrandsLogoBar";
 import SliderCategory from "@/components/Category/Slider";
@@ -8,14 +8,15 @@ import SidebarFilter from "@/components/Category/SideBar";
 import BestSale from "@/components/Category/BestSale";
 
 import ProductListPage from "@/components/Category/ProductList";
+import Recomended from "@/components/Category/Recomended";
 
-export default function Category(){
+export default function Category() {
   return (
     <>
       <Breadcrumb
         items={[{ label: "Home", href: "/" }, { label: "Categoria" }]}
       />
-      <div className="container mx-auto">
+      <div className="Container ">
         <SliderCategory />
 
         <BrandsLogoBar />
@@ -24,11 +25,11 @@ export default function Category(){
           <SidebarFilter />
           <div className="flex-1 px-4 py-6 bg-white">
             <BestSale />
-            <BestSale />
+            <Recomended />
             <ProductListPage />
           </div>
         </div>
       </div>
     </>
   );
-};
+}

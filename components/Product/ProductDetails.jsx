@@ -34,7 +34,7 @@ const ProductDetails = ({
             <div key={i} className="bg-gray-100 w-12 h-12 rounded" />
           ))}
         </div>
-        <div className="bg-gray-100 rounded w-[400px] h-[400px]" />
+        <div className="bg-gray-100 rounded w-[400px] h-auto sm:h-[400px]" />
       </div>
 
       {/* Right: Product Info */}
@@ -62,7 +62,7 @@ const ProductDetails = ({
 
         {/* Quantity & Buttons */}
 
-        <div className="mt-6 flex gap-4 border-b border-[var(--lightGray4)] pb-4">
+        <div className="mt-6 flex flex-wrap gap-4 border-b border-[var(--lightGray4)] pb-4">
           {/* Quantity Selector */}
           <div className="flex flex-col">
             <label htmlFor="quantity" className="text-sm font-medium">

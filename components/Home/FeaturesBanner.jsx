@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import {
   FaRocket,
@@ -38,7 +38,7 @@ const features = [
 
 const FeatureBar = () => {
   return (
-    <div className="container mx-auto border border-[var(--lightGray4)] p-4 md:p-6 bg-white">
+    <div className="Container mx-auto border border-[var(--lightGray4)] p-4 md:p-6 bg-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {features.map((feature, index) => (
           <div

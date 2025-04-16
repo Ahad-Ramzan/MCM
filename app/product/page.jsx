@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import Breadcrumb from "@/components/Breadcrumb";
 import { ProductInfoTabs } from "@/components/Product/product-info-tabs";
 import ProductDetails from "@/components/Product/ProductDetails";
 import RightSideBar from "@/components/Product/RightSideBar";
 import React from "react";
 
-export default function Product(){
+export default function Product() {
   return (
     <div>
       <Breadcrumb
@@ -16,7 +16,7 @@ export default function Product(){
         ]}
       />
 
-      <div className="container mx-auto flex  flex-col lg:flex-row w-full">
+      <div className="Container flex  flex-col lg:flex-row w-full">
         {/* Main Content Area */}
         <div className="flex-1 p-4">
           {/* Your product list, filter, header etc. goes here */}
@@ -25,7 +25,7 @@ export default function Product(){
         </div>
         <RightSideBar />
       </div>
-      <div className="container mx-auto">
+      <div className="Container mx-auto">
         <h2 className="text-2xl font-semibold pb-4 border-b border-[var(--lightGray4)]">
           Produtos Semelhantes
         </h2>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,12 +10,12 @@ import LogoWhite from "@/public/icons/Logo_white_header.png";
 const MobileTopbar = () => {
   return (
     <div>
-      <div className=" flex items-center justify-center bg-gray-100 py-2 gap-4">
+      <div className=" flex items-center justify-center bg-gray-100 py-2 gap-2 sm:gap-4">
         <Link href="/trackorder" className="whitespace-nowrap">
           Acompanhar Encomenda
         </Link>
         <span className="hidden sm:inline">|</span>
-        <span className="whitespace-nowrap">EUR</span>
+        <span className="hidden sm:inline whitespace-nowrap">EUR</span>
         <span className="hidden sm:inline">|</span>
 
         {/* Language Selector (on hover) */}
@@ -40,7 +40,7 @@ const MobileTopbar = () => {
         </div>
       </div>
       <div className="bg-[var(--primary)] text-white ">
-        <div className=" container mx-auto border-b-[0.5px] border-[var(--darkGray)] py-3 flex items-center justify-between">
+        <div className=" Container  border-b-[0.5px] border-[var(--darkGray)] py-3 flex items-center justify-between">
           {/* Left: Logo */}
           <Link href="/">
             <Image
