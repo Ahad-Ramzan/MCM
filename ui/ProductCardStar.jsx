@@ -51,6 +51,19 @@ const ProductCardStar = ({
           <StarRating rating={rating} />
           <span className="text-[10px] text-gray-400">{sold}</span>
         </div>
+        {/* Price */}
+        <div className="mt-[2px] font-semibold text-[13px] text-gray-900 flex gap-1 items-center">
+          {discount ? (
+            <>
+              <span className="text-red-600">{discountedPrice}</span>
+              <span className="line-through text-gray-400 text-[12px]">
+                {originalPriceFormatted}
+              </span>
+            </>
+          ) : (
+            <>{price}</>
+          )}
+        </div>
       </div>
     </Link>
   );

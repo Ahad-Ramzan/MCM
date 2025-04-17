@@ -68,7 +68,7 @@ export default function BottomNavbar() {
                   alt="EN"
                   width={20}
                   height={15}
-                />{" "}
+                />
                 English
               </li>
             </ul>

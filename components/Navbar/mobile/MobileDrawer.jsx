@@ -60,8 +60,6 @@ const MobileDrawer = ({ isOpen, onClose, drawerType }) => {
                 <li>
                   <Link href="/category">Categorias</Link>
                 </li>
-                <li>Ferramentas</li>
-                <li>Revestimentos</li>
               </ul>
             )}
 

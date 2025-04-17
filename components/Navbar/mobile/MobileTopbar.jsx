@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { FaRegUser } from "react-icons/fa";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import LogoWhite from "@/public/icons/Logo_white_header.png";
 
 const MobileTopbar = () => {
   return (
@@ -19,7 +21,7 @@ const MobileTopbar = () => {
         {/* Language Selector (on hover) */}
         <div className="relative group cursor-pointer">
           <div className="flex items-center gap-1">
-            <div className="w-5 h-4 bg-gray-200" />
+            <Image src="/icons/flag.png" alt="PT" width={20} height={15} />
             <span>Português</span>
             <MdKeyboardArrowDown size={16} />
           </div>
@@ -27,11 +29,11 @@ const MobileTopbar = () => {
           {/* Language Dropdown */}
           <ul className="absolute top-5 right-0 bg-[var(--White)] text-black shadow-lg rounded w-40 p-2 hidden group-hover:block z-50">
             <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer flex items-center gap-2">
-              <div className="w-5 h-4 bg-gray-200" />
+              <Image src="/icons/flag.png" alt="PT" width={20} height={15} />
               Português
             </li>
             <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer flex items-center gap-2">
-              <div className="w-5 h-4 bg-gray-200" />
+              <Image src="/icons/English.png" alt="EN" width={20} height={15} />
               English
             </li>
           </ul>
@@ -41,8 +43,15 @@ const MobileTopbar = () => {
         <div className="Container border-b-[0.5px] border-[var(--darkGray)] py-3 flex items-center justify-between">
           {/* Left: Logo */}
           <Link href="/">
-            <div className="w-40 h-10 bg-gray-200" />
+            <Image
+              src={LogoWhite}
+              height={160}
+              width={160}
+              alt="MCM logo"
+              className=""
+            />
           </Link>
+
           {/* Right: Icons */}
           <div className="flex items-center gap-6 text-sm">
             <Link href="/checkout">
