@@ -1,9 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 import FormHeaderSearch from '~/components/shared/forms/FormHeaderSearch';
 
 const HeaderDashboard = ({
     title = 'Dashboard',
-    description = 'Tudo aqui',
+    description = 'Everything here',
 }) => {
     return (
         <header className="header--dashboard">
@@ -15,10 +16,10 @@ const HeaderDashboard = ({
                 <FormHeaderSearch />
             </div>
             <div className="header__right">
-                <a className="header__site-link" href="#">
+                <Link href="/login" className="header__site-link">
                     <span>VER LOJA</span>
                     <i className="icon-exit-right"></i>
-                </a>
+                </Link>
             </div>
         </header>
     );

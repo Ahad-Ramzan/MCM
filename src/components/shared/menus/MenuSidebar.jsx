@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const MenuSidebar = () => {
     const router = useRouter();
@@ -35,6 +36,10 @@ const MenuSidebar = () => {
             url: '/settings',
             icon: 'icon-cog',
         },
+        {
+            url: '/settings/bitrix24',
+            image: '/img/Bitrix24.png',
+        },
     ];
 
     return (
@@ -42,10 +47,40 @@ const MenuSidebar = () => {
             {menuItems.map((item, index) => (
                 <li
                     key={index}
+                    style={item.image ? { 
+                        position: 'absolute', 
+                        top: "200px", 
+                        left: "1px", 
+                        border: 'none',
+                        width: '100%',
+                        height: '40px',
+                        pointerEvents: 'none'
+                    } : {}}
                     className={router.pathname === item.url ? 'active' : ''}>
-                    <Link href={item.url}>
-                        <i className={item.icon}></i>
-                        {item.text}
+                    <Link 
+                        href={item.url} 
+                        className={item.image ? 'no-hover' : ''}
+                        style={item.image ? { 
+                            paddingLeft: '28px', 
+                            border: 'none',
+                            pointerEvents: 'none'
+                        } : {}}
+                    >
+                        {item.image ? (
+                            <img 
+                                src={item.image} 
+                                alt="Bitrix24"
+                                style={{
+                                    maxWidth: '120px',
+                                    pointerEvents: 'none'
+                                }}
+                            />
+                        ) : (
+                            <>
+                                <i className={item.icon}></i>
+                                {item.text}
+                            </>
+                        )}
                     </Link>
                 </li>
             ))}

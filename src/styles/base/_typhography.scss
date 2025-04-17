@@ -1,6 +1,8 @@
 * {
     font-family: $font-1st;
     font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -8,7 +10,9 @@ html {
 }
 
 body {
-    font-size: $document-font-size;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $color-text;
 }
 
 h1,
@@ -21,7 +25,7 @@ h6 {
     color: $color-heading;
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 700 !important;
 
     a {
         color: inherit;
@@ -45,15 +49,15 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h6 {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 p {
-    font-size: $document-font-size;
+    font-size: 16px;
     line-height: 1.6em;
     color: $color-text;
 
@@ -67,11 +71,17 @@ p {
 a {
     position: relative;
     color: inherit;
-    text-decoration: none;
-    @include transition(all 0.4s ease);
+    text-decoration: none !important;
+    transition: all 0.4s ease;
 
     &:hover {
         color: $color-1st;
+        text-decoration: none !important;
+    }
+
+    &:focus {
+        outline: none;
+        text-decoration: none !important;
     }
 }
 
@@ -81,25 +91,18 @@ textarea,
 button,
 select {
     outline: none;
-}
+    text-decoration: none !important;
+    color: inherit;
 
-a:hover,
-h1:focus,
-h2:focus,
-h3:focus,
-h4:focus,
-h5:focus,
-h6:focus {
-    text-decoration: none;
-}
+    &:hover {
+        outline: none;
+        text-decoration: none !important;
+    }
 
-a:focus,
-button:focus,
-select:focus,
-input:focus,
-textarea:focus {
-    outline: none;
-    text-decoration: none;
+    &:focus {
+        outline: none;
+        text-decoration: none !important;
+    }
 }
 
 img {
@@ -194,5 +197,28 @@ figure {
             background-color: #e50202;
         }
     }
+}
+
+.ps-link {
+    display: inline-block;
+    font-size: 16px;
+    color: $color-heading;
+    transition: all .4s ease;
+    
+    &:hover {
+        color: $color-1st;
+    }
+}
+
+.ps-link--gray {
+    color: $color-text;
+    
+    &:hover {
+        color: $color-heading;
+    }
+}
+
+strong {
+    font-weight: 700;
 }
 
