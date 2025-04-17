@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
+import StarRating from "@/ui/StarRating";
 
-const CategoryCard = ({ title, image }) => {
+const CategoryCard = ({ title, image, price = "10,99€", rating = 4, reviews = 2 }) => {
   const hasValidImage = typeof image === "string" && image.trim() !== "";
 
   return (
@@ -11,8 +12,13 @@ const CategoryCard = ({ title, image }) => {
       ) : (
         <div className="flex-1" />
       )}
-      <div className="p-2 pb-10 text-center text-sm font-medium bg-white">
-        {title}
+      <div className="p-2 text-center bg-white">
+        <div className="text-sm font-medium text-[var(--primary)]">{title}</div>
+        <div className="flex items-center justify-center gap-1 mt-1">
+          <StarRating rating={rating} />
+          <span className="text-[10px] text-gray-400">({reviews})</span>
+        </div>
+        <div className="text-[var(--secondary)] font-bold mt-1">{price}</div>
       </div>
     </div>
   );

@@ -56,11 +56,11 @@ export default function TopNavbar() {
           </Link>
           <div className="flex items-center gap-2">
             <FaRegUser size={25} />
-            <span className="whitespace-nowrap cursor-pointer">
+            <a href="https://adminmcm.estelatechnologies.com/login" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap cursor-pointer">
               Login
               <br />
               Registar
-            </span>
+            </a>
           </div>
         </div>
       </nav>

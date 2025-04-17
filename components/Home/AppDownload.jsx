@@ -14,6 +14,7 @@ const AppDownload = () => {
             className="object-contain"
             width={300}
             height={400}
+            priority
           />
         </div>
       </div>
@@ -43,15 +44,19 @@ const AppDownload = () => {
 
         {/* App Store Buttons */}
         <div className="flex gap-2 sm:gap-4">
-          <img
+          <Image
             src="/images/get-it-on-google-play.png"
             alt="Google Play"
-            className="h-10"
+            width={135}
+            height={40}
+            className="h-10 w-auto"
           />
-          <img
+          <Image
             src="/images/download-on-the-app-store.png"
             alt="App Store"
-            className="h-10"
+            width={135}
+            height={40}
+            className="h-10 w-auto"
           />
         </div>
       </div>

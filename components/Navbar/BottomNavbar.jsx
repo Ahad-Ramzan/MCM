@@ -23,19 +23,6 @@ export default function BottomNavbar() {
             <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer">
               <Link href="/category">Categoria</Link>
             </li>
-
-            <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer">
-              Casa & Cozinha
-            </li>
-            <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer">
-              Moda
-            </li>
-            <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer">
-              Desporto
-            </li>
-            <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer">
-              Automóveis
-            </li>
           </ul>
         </div>
 

@@ -1,16 +1,14 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaRegUser } from "react-icons/fa";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import LogoWhite from "@/public/icons/Logo_white_header.png";
 
 const MobileTopbar = () => {
   return (
     <div>
-      <div className=" flex items-center justify-center bg-gray-100 py-2 gap-2 sm:gap-4">
+      <div className="flex items-center justify-center bg-gray-100 py-2 gap-2 sm:gap-4">
         <Link href="/trackorder" className="whitespace-nowrap">
           Acompanhar Encomenda
         </Link>
@@ -21,7 +19,7 @@ const MobileTopbar = () => {
         {/* Language Selector (on hover) */}
         <div className="relative group cursor-pointer">
           <div className="flex items-center gap-1">
-            <Image src="/icons/flag.png" alt="PT" width={20} height={15} />
+            <div className="w-5 h-4 bg-gray-200" />
             <span>Português</span>
             <MdKeyboardArrowDown size={16} />
           </div>
@@ -29,27 +27,21 @@ const MobileTopbar = () => {
           {/* Language Dropdown */}
           <ul className="absolute top-5 right-0 bg-[var(--White)] text-black shadow-lg rounded w-40 p-2 hidden group-hover:block z-50">
             <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer flex items-center gap-2">
-              <Image src="/icons/flag.png" alt="PT" width={20} height={15} />
+              <div className="w-5 h-4 bg-gray-200" />
               Português
             </li>
             <li className="hover:bg-[var(--lightGray)] px-3 py-1 cursor-pointer flex items-center gap-2">
-              <Image src="/icons/English.png" alt="EN" width={20} height={15} />{" "}
+              <div className="w-5 h-4 bg-gray-200" />
               English
             </li>
           </ul>
         </div>
       </div>
-      <div className="bg-[var(--primary)] text-white ">
-        <div className=" Container  border-b-[0.5px] border-[var(--darkGray)] py-3 flex items-center justify-between">
+      <div className="bg-[var(--primary)] text-white">
+        <div className="Container border-b-[0.5px] border-[var(--darkGray)] py-3 flex items-center justify-between">
           {/* Left: Logo */}
           <Link href="/">
-            <Image
-              src={LogoWhite}
-              height={160}
-              width={160}
-              alt="MCM logo"
-              className=""
-            />
+            <div className="w-40 h-10 bg-gray-200" />
           </Link>
           {/* Right: Icons */}
           <div className="flex items-center gap-6 text-sm">
@@ -59,7 +51,9 @@ const MobileTopbar = () => {
                 count={0}
               />
             </Link>
-            <FaRegUser size={25} />
+            <Link href="/account">
+              <FaRegUser size={25} />
+            </Link>
           </div>
         </div>
       </div>
